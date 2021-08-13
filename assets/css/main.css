@@ -346,7 +346,7 @@ nav .menu {
       -ms-flex-align: center;
           align-items: center;
   font-family: "Rajdhani", sans-serif;
-  font-size: 13px;
+  font-size: 0.7rem;
 }
 
 .line {
@@ -422,7 +422,6 @@ nav .menu {
 
 .today-wrapper .mars-today {
   margin-top: -5rem;
-  height: 60vh;
   background: #1b1b1b;
   position: relative;
   padding: 1rem;
@@ -530,7 +529,7 @@ nav .menu {
 .swiper-container {
   width: 100%;
   height: 90vh;
-  margin-top: 6rem;
+  margin-top: 2rem;
 }
 
 .swiper-slide {
@@ -549,7 +548,7 @@ nav .menu {
 }
 
 .swiper-slide .swiper-content {
-  margin-top: 1rem;
+  margin-top: 8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -619,9 +618,8 @@ nav .menu {
 
 .swiper-slide .swiper-content .addon-info {
   width: 100vw;
-  height: 30vh;
   text-align: left;
-  padding-left: 2rem;
+  padding-left: 1rem;
   margin-top: 2rem;
   -webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
           clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
@@ -631,6 +629,7 @@ nav .menu {
   font-family: "Rajdhani", sans-serif;
   text-align: left;
   font-size: 13vw;
+  position: relative;
 }
 
 .swiper-slide .swiper-content .addon-info .addon-title:after {
@@ -639,8 +638,8 @@ nav .menu {
   background: white;
   height: 3px;
   width: 110px;
-  left: 5%;
-  top: 66%;
+  left: 0;
+  top: 90%;
 }
 
 .swiper-slide .swiper-content .addon-info .addon-text {
@@ -654,14 +653,14 @@ nav .menu {
 .swiper-pagination {
   position: absolute;
   top: 10px;
-  left: 0%;
-  width: auto !important;
+  left: 0;
   margin-left: 1rem;
+  width: auto !important;
   opacity: 0;
 }
 
 .swiper-pagination-bullet {
-  padding: 5px 10px;
+  padding: 5px 1vw;
   border-radius: 10px !important;
   border: 2px solid #dd381a;
   width: auto !important;
