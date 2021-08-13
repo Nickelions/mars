@@ -1,0 +1,925 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background: black;
+  color: white;
+  font-family: sans-serif;
+}
+
+.menu-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  z-index: 20;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  overflow: hidden;
+}
+
+.menu-content .menu-top {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.menu-content .menu-top .menu-logo {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 10rem;
+  width: 60vw;
+  background: #dd381a;
+}
+
+.menu-content .menu-top .menu-close {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-align: right;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  width: 30vw;
+  opacity: 0.6;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.menu-content .menu-top .menu-close:hover {
+  opacity: 1;
+}
+
+.menu-content .menu-links {
+  width: 100vw;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  padding-left: 1rem;
+  line-height: 5rem;
+}
+
+.menu-content ul {
+  list-style: none;
+}
+
+.menu-content ul li {
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.menu-content ul li:hover {
+  opacity: 0.3;
+}
+
+.all {
+  overflow-x: hidden;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  height: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+
+nav .logo {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+nav .menu {
+  height: 25px;
+  cursor: pointer;
+}
+
+.header {
+  margin-top: -1rem;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background: url("../img/diff-head.jpg") black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header-title {
+  position: relative;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 12vw;
+  text-align: left;
+  margin-left: -1rem;
+  z-index: 2;
+  opacity: 0;
+}
+
+.header .header-title:before {
+  position: absolute;
+  content: "12/12/2082";
+  font-size: 4vw;
+  top: -10px;
+  right: 0;
+}
+
+.header .header-sub {
+  width: 85vw;
+  font-family: "Poppins", sans-serif;
+  font-size: 4vw;
+  z-index: 2;
+  margin-right: 10px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 500;
+  z-index: 2;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100%;
+  margin-top: 12rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .mars-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .mars {
+  position: absolute;
+  width: 50vw;
+  opacity: 0.5;
+  -webkit-clip-path: circle(0% at 48% 49%);
+          clip-path: circle(0% at 48% 49%);
+}
+
+.wrapper .mars-text {
+  font-family: "Rajdhani", sans-serif;
+  text-align: left;
+  font-size: 20vw;
+}
+
+.wrapper .right-box {
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.wrapper .right-box .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  position: relative;
+}
+
+.wrapper .right-box .content .number {
+  position: absolute;
+  top: 0%;
+  left: 20%;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 12vw;
+  color: white;
+  opacity: 0;
+  display: inline;
+  white-space: nowrap;
+}
+
+.wrapper .right-box .content .mars-title {
+  position: relative;
+  font-family: "Rajdhani", sans-serif;
+  text-align: left;
+  font-size: 8vw;
+  opacity: 0;
+  color: #dd381a;
+}
+
+.wrapper .right-box .content .mars-title span {
+  color: white;
+  font-size: 5vw;
+}
+
+.wrapper .right-box .content .mars-title:after {
+  position: absolute;
+  content: "";
+  background: white;
+  height: 3px;
+  width: 150px;
+  left: 0;
+  bottom: 0;
+}
+
+.wrapper .right-box .content .wiki {
+  margin-top: 2rem;
+}
+
+.wrapper .right-box .content .wiki-text {
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  font-size: 1rem;
+  text-indent: 20px;
+  line-height: 1.8rem;
+}
+
+.letter {
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+}
+
+.extra-letter {
+  font-family: "Rajdhani", sans-serif;
+  text-align: left;
+  opacity: 0.5;
+  color: black;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  height: 9rem;
+  left: 50%;
+}
+
+.info .info-pill {
+  background: #dd381a;
+  opacity: 0;
+  width: 25vw;
+  height: 8vh;
+  margin: 10px;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 13px;
+}
+
+.line {
+  background: white;
+  width: 110px;
+  height: 2px;
+  vertical-align: bottom;
+}
+
+.line-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.close-icon {
+  opacity: 0;
+}
+
+.book-button {
+  font-family: 'Poppins', sans-serif;
+  border-radius: 20px;
+  margin-top: 2rem;
+  background: white;
+  color: black;
+  width: 10rem;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: background 1s;
+  transition: background 1s;
+  opacity: 0;
+}
+
+.book-button:hover {
+  background: black;
+  color: white;
+}
+
+.today-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.today-wrapper .today-image {
+  background: url("../img/today.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+}
+
+.today-wrapper .mars-today {
+  margin-top: -5rem;
+  height: 60vh;
+  background: #1b1b1b;
+  position: relative;
+  padding: 1rem;
+  -webkit-clip-path: polygon(0 100%, 0 100%, 0 0, 0 0);
+          clip-path: polygon(0 100%, 0 100%, 0 0, 0 0);
+}
+
+.today-wrapper .mars-today .today-number {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  opacity: 0;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 18vw;
+  color: #dd381a;
+  display: inline;
+  white-space: nowrap;
+}
+
+.today-wrapper .mars-today .today-title {
+  position: relative;
+  font-family: "Rajdhani", sans-serif;
+  text-align: left;
+  font-size: 13vw;
+  opacity: 0;
+}
+
+.today-wrapper .mars-today .today-title:after {
+  position: absolute;
+  content: "";
+  background: white;
+  height: 3px;
+  width: 150px;
+  left: 0;
+  bottom: 0;
+}
+
+.today-wrapper .mars-today .today {
+  margin-top: 1rem;
+}
+
+.today-wrapper .mars-today .today-text {
+  margin-top: 2rem;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  font-size: 1rem;
+  text-indent: 20px;
+  line-height: 2rem;
+  color: white;
+  opacity: 0;
+}
+
+.learn-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 1rem;
+  padding-left: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  background: #272727;
+  width: 8rem;
+  height: 2rem;
+  color: white;
+  -webkit-clip-path: polygon(0 0%, 0 0, 0 100%, 0% 100%);
+          clip-path: polygon(0 0%, 0 0, 0 100%, 0% 100%);
+  -webkit-transition: background 1s;
+  transition: background 1s;
+  cursor: pointer;
+}
+
+.learn-more:hover {
+  background: #dd381a;
+}
+
+.second-wrapper {
+  margin-top: 8rem;
+}
+
+.second-wrapper .today-image {
+  background: url("../img/nasa.jpg");
+  background-size: cover;
+}
+
+.third-wrapper {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 12rem;
+}
+
+.third-wrapper .mars-today {
+  background: black !important;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 90vh;
+  margin-top: 6rem;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper-slide .swiper-content {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper-slide .swiper-content .addon-image {
+  width: 100vw;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper-slide .swiper-content .addon-image img {
+  height: 25vh;
+  opacity: 0;
+  -webkit-animation: lifeAnimation 3s linear infinite;
+          animation: lifeAnimation 3s linear infinite;
+}
+
+@-webkit-keyframes lifeAnimation {
+  0% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  50% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+@keyframes lifeAnimation {
+  0% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  50% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+.swiper-slide .swiper-content .addon-info {
+  width: 100vw;
+  height: 30vh;
+  text-align: left;
+  padding-left: 2rem;
+  margin-top: 2rem;
+  -webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+          clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.swiper-slide .swiper-content .addon-info .addon-title {
+  font-family: "Rajdhani", sans-serif;
+  text-align: left;
+  font-size: 13vw;
+}
+
+.swiper-slide .swiper-content .addon-info .addon-title:after {
+  position: absolute;
+  content: "";
+  background: white;
+  height: 3px;
+  width: 110px;
+  left: 5%;
+  top: 66%;
+}
+
+.swiper-slide .swiper-content .addon-info .addon-text {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 2rem;
+  font-size: 1rem;
+  line-height: 2rem;
+  text-indent: 2rem;
+}
+
+.swiper-pagination {
+  position: absolute;
+  top: 10px;
+  left: 0%;
+  width: auto !important;
+  margin-left: 1rem;
+  opacity: 0;
+}
+
+.swiper-pagination-bullet {
+  padding: 5px 10px;
+  border-radius: 10px !important;
+  border: 2px solid #dd381a;
+  width: auto !important;
+  height: auto !important;
+  font-size: 1rem;
+  font-family: 'Rajdhani', sans-serif;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-transition: background 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;
+}
+
+.swiper-pagination-bullet:hover {
+  background: #dd381a !important;
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff !important;
+  background: #dd381a !important;
+}
+
+@-webkit-keyframes scrollAnimation {
+  0% {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+    opacity: 0;
+  }
+}
+
+@keyframes scrollAnimation {
+  0% {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+    opacity: 0;
+  }
+}
+
+.solar-img {
+  width: 100%;
+  height: 40vh;
+  background: url("../img/solar.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeats;
+  margin-top: -3rem;
+}
+
+.footer {
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul li {
+  display: inline;
+  margin: 2rem;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.footer ul li:hover {
+  opacity: 0.3;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (min-width: 1000px) {
+  .header {
+    margin-top: 0rem;
+    padding: 0;
+    background-size: 100vw;
+    padding-left: 3vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .header .header-title {
+    font-size: 9vw;
+  }
+  .header .header-title:before {
+    font-size: 2vw;
+  }
+  .header .header-sub {
+    text-align: left;
+    width: 60vw;
+    font-size: 1.8vw;
+  }
+  .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 2rem;
+  }
+  .wrapper .left-box {
+    width: 60vw;
+  }
+  .wrapper .mars {
+    width: 20vw;
+  }
+  .wrapper .mars-text {
+    font-size: 10vw;
+  }
+  .wrapper .right-box {
+    margin-top: -3rem;
+  }
+  .wrapper .right-box .content .mars-title {
+    font-size: 8vw;
+  }
+  .info .info-pill {
+    width: 14vw;
+  }
+  .today-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .today-wrapper .today-image {
+    height: 80vh;
+    width: 50vw;
+    margin-top: 0;
+    margin-left: -5rem;
+  }
+  .today-wrapper .mars-today {
+    height: 50vh;
+    width: 50vw;
+    margin-top: 10rem;
+  }
+  .today-wrapper .mars-today .today-title {
+    font-size: 6vw;
+    opacity: 0;
+  }
+  .today-wrapper .mars-today .today {
+    margin-top: 1rem;
+  }
+  .today-wrapper .mars-today .today-text {
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    font-size: 1rem;
+    text-indent: 20px;
+    line-height: 2rem;
+    margin-top: 1rem;
+  }
+  .second-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .second-wrapper .today-image {
+    width: 50vw;
+    margin-left: 5rem;
+  }
+  .second-wrapper .mars-today {
+    width: 48vw;
+    margin-left: -5rem;
+    margin-top: 5rem;
+  }
+  .third-wrapper {
+    margin-top: 2rem;
+    margin-left: 3rem;
+  }
+  .swiper-container {
+    margin-top: 1rem;
+  }
+  .swiper-pagination {
+    top: 10px;
+    right: -65%;
+  }
+  .swiper-slide .swiper-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .swiper-slide .swiper-content .addon-image {
+    background: #1b1b1b;
+    border-radius: 0px 20px 20px 0px;
+    width: 50vw;
+  }
+  .swiper-slide .swiper-content .addon-image img {
+    height: 50vh;
+  }
+  .swiper-slide .swiper-content .addon-info {
+    width: 50vw;
+    height: 30vh;
+    margin-top: -6rem;
+  }
+  .swiper-slide .swiper-content .addon-info .addon-title {
+    font-size: 6vw;
+    position: relative;
+  }
+  .swiper-slide .swiper-content .addon-info .addon-title:after {
+    position: absolute;
+    content: "";
+    background: white;
+    height: 5px;
+    width: 190px;
+    left: 0;
+    top: 90%;
+  }
+  .swiper-slide .swiper-content .addon-info .addon-text {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    text-indent: 2rem;
+  }
+  .solar-img {
+    width: 100%;
+    height: 60vh;
+    background-position: bottom;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,768 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    z-index: 20;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    overflow: hidden;
+
+    .menu-top {
+        padding:  2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        .menu-logo {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 10rem;
+            width: 60vw;
+            background: #dd381a;
+        }
+
+        .menu-close {
+            align-self: flex-end;
+            text-align: right;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            width: 30vw;
+            opacity: 0.6;
+            transition: opacity 1s;
+        }
+
+        .menu-close:hover {
+            opacity: 1;
+        }
+    }
+
+
+    .menu-links {
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        font-family: 'Poppins', sans-serif;
+        font-size: 3rem;
+        padding-left: 1rem;
+        line-height: 5rem;
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            transition: opacity 1s;
+        }
+
+        li:hover {
+            opacity: 0.3;
+        }
+    }
+}
+
+.all {
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    height: 0;
+    justify-content: space-between;
+    padding: 20px;
+
+    .logo {
+        font-family: "Rajdhani", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .menu {
+        height: 25px;
+        cursor: pointer;
+    }
+
+}
+
+.header {
+    margin-top: -1rem;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background: url("../img/diff-head.jpg") black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .header-title {
+        position: relative;
+        font-family: "Rajdhani", sans-serif;
+        font-size: 12vw;
+        text-align: left;
+        margin-left: -1rem;
+        z-index: 2;
+        opacity: 0;
+
+        &:before {
+            position: absolute;
+            content: "12/12/2082";
+            font-size: 4vw;
+            top: -10px;
+            right: 0;
+        }
+    }
+
+    .header-sub {
+        width: 85vw;
+        font-family: "Poppins", sans-serif;
+        font-size: 4vw;
+        z-index: 2;
+        margin-right: 10px;
+        margin-top: 10px;
+        text-align: center;
+        font-weight: 500;
+        z-index: 2;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    margin-top: 12rem;
+    align-items: center;
+
+    .mars-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mars {
+        position: absolute;
+        width: 50vw;
+        opacity: 0.5;
+        clip-path: circle(0% at 48% 49%);
+    }
+
+    .mars-text {
+        font-family: "Rajdhani", sans-serif;
+        text-align: left;
+        font-size: 20vw;
+    }
+
+    .right-box {
+        margin-top: 3rem;
+        width: 100%;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            position: relative;
+
+            .number {
+                position: absolute;
+                top: 0%;
+                left: 20%;
+                font-family: "Rajdhani", sans-serif;
+                font-size: 12vw;
+                color: white;
+                opacity: 0;
+                display: inline;
+                white-space: nowrap;
+            }
+
+            .mars-title {
+                position: relative;
+                font-family: "Rajdhani", sans-serif;
+                text-align: left;
+                font-size: 8vw;
+                opacity: 0;
+                color: #dd381a;
+
+                span {
+                    color: white;
+                    font-size: 5vw;
+                }
+
+                &:after {
+                    position: absolute;
+                    content: "";
+                    background: white;
+                    height: 3px;
+                    width: 150px;
+                    left: 0;
+                    bottom: 0;
+                }
+            }
+
+            .wiki {
+                margin-top: 2rem;
+            }
+
+            .wiki-text {
+                font-family: "Poppins", sans-serif;
+                text-align: left;
+                font-size: 1rem;
+                text-indent: 20px;
+                line-height: 1.8rem;
+            }
+        }
+    }
+}
+
+.letter {
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    transform: translateY(-50px);
+}
+
+.extra-letter {
+    font-family: "Rajdhani", sans-serif;
+    text-align: left;
+    opacity: 0.5;
+    color: black;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 9rem;
+    left: 50%;
+
+    .info-pill {
+        background: #dd381a;
+        opacity: 0;
+        width: 25vw;
+        height: 8vh;
+        margin: 10px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Rajdhani", sans-serif;
+        font-size: 13px;
+    }
+}
+
+.line {
+    background: white;
+    width: 110px;
+    height: 2px;
+    vertical-align: bottom;
+}
+
+.line-icon {
+    display: flex;
+}
+
+.icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.close-icon {
+    opacity: 0;
+}
+
+.book-button {
+    font-family: 'Poppins', sans-serif;
+    border-radius: 20px;
+    margin-top: 2rem;
+    background: white;
+    color: black;
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 1s;
+    opacity: 0;
+}
+
+.book-button:hover {
+    background: black;
+    color: white;
+}
+
+
+.today-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 3rem;
+
+    .today-image {
+        background: url('../img/today.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%)
+    }
+
+    .mars-today {
+        margin-top: -5rem;
+        height: 60vh;
+        background: #1b1b1b;
+        position: relative;
+        padding: 1rem;
+        clip-path: polygon(0 100%, 0 100%, 0 0, 0 0);
+
+        .today-number {
+            position: absolute;
+            top: -10px;
+            right: 0;
+            opacity: 0;
+            font-family: "Rajdhani", sans-serif;
+            font-size: 18vw;
+            color: #dd381a;
+            display: inline;
+            white-space: nowrap;
+        }
+
+        .today-title {
+            position: relative;
+            font-family: "Rajdhani", sans-serif;
+            text-align: left;
+            font-size: 13vw;
+            opacity: 0;
+
+
+            &:after {
+                position: absolute;
+                content: "";
+                background: white;
+                height: 3px;
+                width: 150px;
+                left: 0;
+                bottom: 0;
+            }
+        }
+
+        .today {
+            margin-top: 1rem;
+        }
+
+        .today-text {
+            margin-top: 2rem;
+            font-family: "Poppins", sans-serif;
+            text-align: left;
+            font-size: 1rem;
+            text-indent: 20px;
+            line-height: 2rem;
+            color: white;
+            opacity: 0;
+        }
+
+    }
+}
+
+.learn-more {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    padding-left: 0.5rem;
+    font-family: "Poppins", sans-serif;
+    background: #272727;
+    width: 8rem;
+    height: 2rem;
+    color: white;
+    clip-path: polygon(0 0%, 0 0, 0 100%, 0% 100%);
+    transition: background 1s;
+    cursor: pointer;
+}
+
+.learn-more:hover {
+    background: #dd381a;
+}
+
+
+.second-wrapper{
+    margin-top: 8rem;
+    
+    .today-image {
+        background: url('../img/nasa.jpg');
+        background-size: cover;
+    }
+}
+
+.third-wrapper {
+    flex-direction: row !important;
+    justify-content: flex-start;
+    margin-top: 12rem;
+
+    .mars-today {
+        background: black !important;
+    }
+}
+
+
+.swiper-container {
+	width: 100%;
+	height: 90vh;
+    margin-top: 6rem;
+   }
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	display: flex;
+    color: white;
+	justify-content: center;
+	align-items: center;
+
+    .swiper-content {
+        margin-top: 1rem;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .addon-image {
+            width: 100vw;
+            height: 30vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                height: 25vh;
+                opacity: 0;
+                animation: lifeAnimation 3s linear infinite;
+            }
+
+            @keyframes lifeAnimation {
+                0% {
+                    transform: translateY(10px);
+                }
+                50% {
+                    transform: translateY(0px);
+                }
+                100% {
+                    transform: translateY(10px);
+                }
+            }
+        }
+        .addon-info {
+            width: 100vw;
+            height: 30vh;
+            text-align: left;
+            padding-left: 2rem;
+            margin-top: 2rem;
+            clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+
+            .addon-title {
+                font-family: "Rajdhani", sans-serif;
+                text-align: left;
+                font-size: 13vw;
+
+                &:after {
+                    position: absolute;
+                    content: "";
+                    background: white;
+                    height: 3px;
+                    width: 110px;
+                    left: 5%;
+                    top: 66%;
+                }
+            }
+
+            .addon-text {
+                font-family: 'Poppins', sans-serif;
+                margin-top: 2rem;
+                font-size: 1rem;
+                line-height: 2rem;
+                text-indent: 2rem;
+            }
+        }
+    }
+}
+.swiper-pagination {
+	position: absolute;
+	top: 10px;
+	left: 0%;
+	width: auto !important;
+	margin-left: 1rem;
+    opacity: 0;
+}
+.swiper-pagination-bullet {
+	padding: 5px 10px ;
+	border-radius: 10px !important;
+    border: 2px solid #dd381a;
+	width: auto !important;
+	height: auto !important;
+	font-size: 1rem;
+    font-family: 'Rajdhani', sans-serif;
+	color:#fff;
+	background: rgba(0,0,0,0.2) ;
+    transition: background 0.5s ease-in-out;
+}
+.swiper-pagination-bullet:hover {
+	background: #dd381a !important;
+}
+.swiper-pagination-bullet-active {
+	color:#fff !important;
+	background: #dd381a !important;
+}
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateX(3px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(-30px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(3px);
+        opacity: 0;
+    }
+}
+
+.solar-img {
+    width: 100%; 
+    height: 40vh; 
+    background: url('../img/solar.jpg'); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeats;
+    margin-top: -3rem;
+}
+
+.footer {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    justify-content: center;
+
+    ul {
+        list-style: none;
+
+        li {
+            display: inline;
+            margin: 2rem;
+            transition: opacity 1s;
+        }
+
+        li:hover {
+            opacity: 0.3;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (min-width: 1000px) {
+    .header {
+        margin-top: 0rem;
+        padding: 0;
+        background-size: 100vw;
+        padding-left: 3vw;
+        justify-content: center;
+        align-items: flex-start;
+
+        .header-title {
+            font-size: 9vw;
+
+            &:before {
+                font-size: 2vw;
+            }
+        }
+
+        .header-sub {
+            text-align: left;
+            width: 60vw;
+            font-size: 1.8vw;
+        }
+    }
+    .wrapper {
+        flex-direction: row;
+        margin-top: 2rem;
+
+        .left-box {
+            width: 60vw;
+        }
+
+        .mars {
+            width: 20vw;
+        }
+
+        .mars-text {
+            font-size: 10vw;
+        }
+
+        .right-box {
+            margin-top: -3rem;
+            .content {
+                .mars-title {
+                    font-size: 8vw;
+                }
+            }
+        }
+    }
+    .info {
+        .info-pill {
+            width: 14vw;
+        }
+    }
+
+.today-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+
+    .today-image {
+        height: 80vh;
+        width: 50vw;
+        margin-top: 0;
+        margin-left: -5rem;
+    }
+
+    .mars-today {
+        height: 50vh;
+        width: 50vw;
+        margin-top: 10rem;
+
+        .today-title {
+            font-size: 6vw;
+            opacity: 0;
+        }
+
+        .today {
+            margin-top: 1rem;
+        }
+
+        .today-text {
+            font-family: "Poppins", sans-serif;
+            text-align: left;
+            font-size: 1rem;
+            text-indent: 20px;
+            line-height: 2rem;
+            margin-top: 1rem;
+        }
+
+    }
+}
+
+.second-wrapper {
+    flex-direction: row;
+    .today-image{
+        width: 50vw;
+        margin-left: 5rem;
+    }
+
+    .mars-today {
+        width: 48vw;
+        margin-left: -5rem;
+        margin-top: 5rem;
+    }
+}
+
+.third-wrapper {
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+
+.swiper-container {
+    margin-top: 1rem;
+}
+
+.swiper-pagination {
+	top: 10px;
+	right: -65%;
+}
+
+        .swiper-slide {
+            .swiper-content {
+                flex-direction: row;
+                justify-content: flex-start;
+        
+                .addon-image {
+                    background: #1b1b1b;
+                    border-radius: 0px 20px 20px 0px;
+                    width: 50vw;
+        
+                    img {
+                        height: 50vh;
+                    }
+                }
+                .addon-info {
+                    width: 50vw;
+                    height: 30vh;
+                    margin-top: -6rem;
+        
+                    .addon-title {
+                        font-size: 6vw;
+                        position: relative;
+        
+                        &:after {
+                            position: absolute;
+                            content: "";
+                            background: white;
+                            height: 5px;
+                            width: 190px;
+                            left: 0;
+                            top: 90%;
+                        }
+                    }
+        
+                    .addon-text {
+                        font-family: 'Poppins', sans-serif;
+                        margin-top: 1rem;
+                        font-size: 1rem;
+                        line-height: 2rem;
+                        text-indent: 2rem;
+                    }
+                }
+            }
+        }
+
+        .solar-img {
+            width: 100%; 
+            height: 60vh; 
+            background-position: bottom;
+        }
+
+}

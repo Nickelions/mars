@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MARS</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+
+    <div class="menu-content">
+      <div class="menu-top">
+        <div class="menu-close" onclick="closeMenu()">CLOSE</div>
+        <div class="menu-logo">
+          MARS
+        </div>
+      </div>
+      <div class="menu-links">
+        <ul>
+          <li><a href="#about-mars" onclick="closeMenu()">ABOUT</a></li>
+          <li><a href="#mars-services" onclick="closeMenu()">OUR SERVICES</a></li>
+          <li><a href="#mars-news" onclick="closeMenu()">TODAY NEWS</a></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+
+
+
+    <div class="all">
+      <nav>
+        <div class="logo">MARS</div>
+        <div onclick="openMenu()"><img src="assets/img/more-alt.svg" alt="menu" class="menu" /></div>
+      </nav>
+      <br />
+      <div class="header">
+        <p class="header-title">JOURNEY TO MARS</p>
+        <p class="header-sub">
+          Unseen sights before your eyes, join our crew for an exciting journey through space and maybe time.
+        </p>
+        <div class="book-button">
+          Book a Trip Now!
+        </div>
+      </div>
+      <div class="wrapper" id="about-mars">
+        <div class="left-box">
+          <div class="mars-container">
+            <img src="assets/img/mars.svg" alt="mars" class="mars" />
+            <p class="mars-text">04: MARS</p>
+          </div>
+          <div class="info">
+            <div class="info-pill">
+              <img src="assets/img/mari.svg" alt="icon" class="icon" /> 2 Moons
+            </div>
+            <div class="info-pill">
+              <img src="assets/img/mari.svg" alt="icon" class="icon" /> 3.721
+              m/s²
+            </div>
+            <div class="info-pill">
+              <img src="assets/img/mari.svg" alt="icon" class="icon" /> 3,389.5
+              km
+            </div>
+          </div>
+        </div>
+        <div class="right-box">
+          <div class="content">
+            <span class="number">04</span>
+            <span class="mars-title"> MARS</span>
+            <div class="wiki">
+              <p class="wiki-text">
+                Mars is the fourth planet from the Sun and the second-smallest
+                planet in the Solar System, being larger than only Mercury. In
+                English, Mars carries the name of the Roman god of war and is
+                often referred to as the "Red Planet". The latter refers to the
+                effect of the iron oxide prevalent on Mars's surface, which
+                gives it a reddish appearance distinctive among the astronomical
+                bodies visible to the naked eye.
+              </p>
+              <br />
+              <div class="line-icon">
+                <img
+                  src="assets/img/mari.svg"
+                  alt="icon"
+                  class="icon close-icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slider main container -->
+      <div class="swiper-container" id="mars-services">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <div class="addon-image">
+                  <img src="assets/img/astronaut.svg" alt="" srcset="">
+              </div>
+              <div class="addon-info">
+                <span class="addon-title">LIFE ON MARS</span>
+                <p class="addon-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                  sequi iste quae qui voluptatem exercitationem aliquam enim
+                  vitae assumenda atque laborum unde dicta, eaque, adipisci
+                  neque deleniti cupiditate voluptatibus. Exercitationem!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <div class="addon-image">
+                  <img src="assets/img/rover.svg" alt="" srcset="">
+              </div>
+              <div class="addon-info">
+                <span class="addon-title">RENT A ROVER</span>
+                <p class="addon-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                  sequi iste quae qui voluptatem exercitationem aliquam enim
+                  vitae assumenda atque laborum unde dicta, eaque, adipisci
+                  neque deleniti cupiditate voluptatibus. Exercitationem!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <div class="addon-image">
+                  <img src="assets/img/space-ship.svg" alt="" srcset="">
+              </div>
+              <div class="addon-info">
+                <span class="addon-title">SPACESHIP RIDE</span>
+                <p class="addon-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                  sequi iste quae qui voluptatem exercitationem aliquam enim
+                  vitae assumenda atque laborum unde dicta, eaque, adipisci
+                  neque deleniti cupiditate voluptatibus. Exercitationem!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="today-wrapper" id="mars-news">
+        <div class="today-image"></div>
+        <div class="mars-today">
+          <span class="today-number">01</span>
+          <span class="today-title">MARS TODAY</span>
+          <div class="today">
+            <p class="today-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+              beatae, voluptatem ex veritatis porro totam accusantium aperiam
+              dolorem dolore, esse itaque eaque consequuntur a dignissimos
+              eveniet asperiores voluptates iusto autem.
+            </p>
+          </div>
+          <div class="learn-more">Learn More</div>
+        </div>
+      </div>
+      <div class="today-wrapper second-wrapper">
+        <div class="today-image"></div>
+        <div class="mars-today">
+          <span class="today-number">02</span>
+          <span class="today-title">Our Colonies</span>
+          <div class="today">
+            <p class="today-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+              beatae, voluptatem ex veritatis porro totam accusantium aperiam
+              dolorem dolore, esse itaque eaque consequuntur a dignissimos
+              eveniet asperiores voluptates iusto autem.
+            </p>
+          </div>
+          <div class="learn-more">Learn More</div>
+        </div>
+      </div>
+      <div class="today-wrapper third-wrapper">
+        <div class="mars-today">
+          <span class="today-number">03</span>
+          <span class="today-title">Solar System</span>
+          <div class="today">
+            <p class="today-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+              beatae, voluptatem ex veritatis porro totam accusantium aperiam
+              dolorem dolore, esse itaque eaque consequuntur a dignissimos
+              eveniet asperiores voluptates iusto autem.
+            </p>
+          </div>
+          <div class="learn-more">Learn More</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="solar-img"></div>
+    <div class="footer">
+      <ul>
+        <li><a href="#about-mars">about</a></li>
+        <li><a href="#mars-services">our services</a></li>
+        <li><a href="#mars-news">news</a></li>
+      </ul>
+    </div>
+
+    <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+    <!-- Photo by <a href="https://unsplash.com/@sushioutlaw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brian McGowan</a> on <a href="https://unsplash.com/s/photos/mars?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   Photo by <a href="https://unsplash.com/@nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">NASA</a> on <a href="https://unsplash.com/s/photos/space-station?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   Photo by <a href="https://unsplash.com/@ripato?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ricardo Gomez Angel</a> on <a href="https://unsplash.com/s/photos/hotel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>     
+    Photo by <a href="https://unsplash.com/@yuli_superson?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Juli Kosolapova</a> on <a href="https://unsplash.com/s/photos/mars?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+   <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+--></body>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var menu = ["LIFE ON MARS", "RENT A ROVER", "SPACESHIP RIDE"];
+    var mySwiper = new Swiper(".swiper-container", {
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + menu[index] + "</span>";
+        },
+      },
+    });
+    mySwiper.on("slideChange", function() {
+    console.log("SLIDE CHANGED");
+
+    gsap.to('.addon-image img', {
+        scrollTrigger: {
+            trigger: '.addon-image img',
+            toggleActionsw: "restart pause reverse restart"
+        },
+        opacity: '0',
+        duration: 1
+    })
+
+    gsap.to('.addon-info', {
+        scrollTrigger: {
+            trigger: '.addon-info',
+            toggleActionsw: "restart pause reverse restart"
+        },
+        opacity: '0',
+        duration: 1
+    })
+  });
+
+  mySwiper.on("slideChangeTransitionEnd", function() {
+    gsap.to('.addon-image img', {
+        scrollTrigger: {
+            trigger: '.addon-image img',
+            toggleActionsw: "restart pause reverse restart"
+        },opacity: '1',
+        duration: 1
+    })
+
+    gsap.to('.addon-info', {
+        scrollTrigger: {
+            trigger: '.addon-info',
+            toggleActionsw: "restart pause reverse restart"
+        },
+        opacity: '1',
+        duration: 1.3
+    })
+  })
+  
+  </script>
+</html>
